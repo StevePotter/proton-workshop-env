@@ -576,6 +576,14 @@ Resources:
               RunOrder: 1
           Name: Source
         - Actions:
+          Name: MyApprovalAction
+          - ActionTypeId:
+              Category: Approval
+              Owner: AWS
+              Version: '1'
+              Provider: Manual
+            RunOrder: 1
+        - Actions:
             - ActionTypeId:
                 Category: Build
                 Owner: AWS
