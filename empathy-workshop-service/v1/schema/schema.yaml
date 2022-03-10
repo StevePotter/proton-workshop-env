@@ -25,6 +25,10 @@ schema:
           description: "The size of the task you want to run"
           enum: ["x-small", "small", "medium", "large", "x-large"]
           default: "x-small"
+        text:
+          type: string
+          description: "The text to display"
+          default: "Hello"
         image:
           type: string
           description: "The name/url of the container image"

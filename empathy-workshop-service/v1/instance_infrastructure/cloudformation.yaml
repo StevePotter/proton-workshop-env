@@ -44,7 +44,7 @@ Resources:
           Image: '{{service_instance.inputs.image}}'
           Environment:
             - Name: INDEX_HTML_CONTENT
-              Value: I am a king
+              Value: '{{service_instance.inputs.text}}'
           PortMappings:
             - ContainerPort: '{{service_instance.inputs.port}}'
           LogConfiguration:
